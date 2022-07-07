@@ -1,0 +1,38 @@
+{
+	"name": "cvita-task-be",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"nodemonConfig": {
+		"ignore": [
+			"data.json"
+		]
+	},
+	"scripts": {
+		"start": "nodemon src/app.ts",
+		"build": "tsc -p ."
+	},
+	"keywords": [
+		"express",
+		"server",
+		"api",
+		"tasks"
+	],
+	"author": "Mahmoud Elmahalawy",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/morgan": "^1.9.3",
+		"@types/node": "^18.0.1",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.19",
+		"ts-node": "^10.8.2",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1"
+	}
+}
